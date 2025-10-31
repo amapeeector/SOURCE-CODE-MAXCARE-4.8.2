@@ -57,6 +57,7 @@ namespace maxcare
                 this.timer1.Stop();
                 base.Hide();
                 new fmain("").ShowDialog();
+                this.timer1.Tick -= this.fadeIn;
                 this.timer1.Tick += this.fadeOut;
                 this.timer1.Start();
             }
